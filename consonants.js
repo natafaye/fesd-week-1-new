@@ -1,22 +1,19 @@
-//https://www.codewars.com/kata/5a19226646d843de9000007d/train/javascript
+// https://www.codewars.com/kata/5a19226646d843de9000007d/train/javascript
 
-const CONSONANTS = "bcdfghjklmnpqrstvwxyz"
+const CONSONANTS = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
 
 function countConsonants(str) {
-  const seen = []
+  const foundAlready = []
   for(let i = 0; i < str.length; i++) {
-    if(CONSONANTS.includes(str.charAt(i).toLowerCase()) && !seen.includes(str[i].toLowerCase())) {
-       seen.push(str[i].toLowerCase())
+    if(CONSONANTS.includes(str[i]) && !foundAlready.includes(str[i].toLowerCase())) {
+        foundAlready.push(str[i].toLowerCase())
     }
   }
-  return seen.length
+  return foundAlready.length
 }
 
-
-// 1 - Think it out like a human first
-// 2 - Start with what you know
-// 3 - Make it stupid and crappy first
-
-// str = Daddy
-// dy
-// return 2
+// loop through the letters of the string
+// if its a consonant
+// and if its not already in the array of consonants
+// add it to the array of consonants
+// return the length of the array
