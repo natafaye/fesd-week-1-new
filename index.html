@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>This goes in the tab</title>
+    <!-- STUFF YOU DON'T SEE (INFO ABOUT THE PAGE) -->
+    <title>Text that goes in the top tab</title>
 </head>
 <body>
-    <h1>Frogs</h1>
+    <!-- STUFF YOU SEE -->
+    <h3>Headings</h3>
+    <ul>
+        <li>
+            <!-- Self-closing (void) element -->
+            <img src="images/chair.jpg" width="300"/><!-- hack - we'll fix this with CSS starting next week -->
+        </li>
+        <li>I'm a list item</li>
+    </ul>
+    <div>
+        
+    </div>
     <p>
-        1243 Main St<br/>
-        Reno, NV
+        123 Main st<br/>
+        City, State, 32345
     </p>
-    <a href="something">Link</a>
-    <img src="images/chair.jpg" width="100"/>
-    <div>
-        <h4>Frogs</h4>
-        <ul>
-            <li>fdsfds</li>
-            <li>
-                fdsfdsfsd
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h4>Fish</h4>
-        <ul>
-            <li>fdsfds</li>
-            <li>
-                fdsfdsfsd
-            </li>
-        </ul>
-    </div>
-    
-    <a href="https://youtube.com">Link to the Video</a>
-    <form>
-        <label for="color-input">Color</label>
-        <input type="text" id="color-input"/>
-        <select>
-            <option value="1">Something</option>
-            <option value="2">Something 2</option>
-            <option value="3">Something 3</option>
-        </select>
-    </form>
-    <div>
-    </div>
+    <section>
+        <form>
+            <label for="color-input">Your Favorite Color</label>
+            <input type="text" id="color-input"/>
+
+            <label for="birth-input">Your Birthdate</label>
+            <input type="date" id="birth-input"/>
+
+            <label for="feelings-select">How are you?</label>
+            <select id="feelings-select">
+                <option>I'm great</option>
+                <option>I'm not great</option>
+            </select>
+
+            <label for="thoughts-input">Thoughts?</label>
+            <textarea id="thoughts-input"></textarea>
+
+            <input type="radio" id="vehicle1" name="vehicle" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+
+            <input type="radio" id="vehicle2" name="vehicle" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+
+            <input type="radio" id="vehicle3" name="vehicle" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+
+
+            <label for="feelings-select">Month</label>
+            <select id="feelings-select">
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+            </select>
+
+            <label for="feelings-select">Day</label>
+            <select id="feelings-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <button>Submit</button>
+        </form>
+    </section>
+    <article></article>
+    <a href="http://www.google.com">Absolute link to Google</a>
+    <a href="aboutus.html">Relative Link to About Us</a>
 </body>
 </html>
